@@ -8,7 +8,22 @@
 
 import UIKit
 
+@objc
+
+protocol HomeViewControllerDelegate {
+    
+    @objc optional func toggleLeftPanel()
+    @objc optional func collapseSidePanel()
+    
+}
+
 class HomeViewController: UIViewController {
+    
+    var delegate: HomeViewController?
+    
+    @IBAction func accountTapped(_sender: AnyObject){
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

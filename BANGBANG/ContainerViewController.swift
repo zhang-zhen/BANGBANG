@@ -16,35 +16,46 @@ enum SlideOutState {
 
 class ContainerViewController: UIViewController {
     
-    var centerNavigationController: UINavigationController!
-    var centerViewController: HomeViewController!
+    var homeNavigationController: UINavigationController!
+    var homeViewController: HomeViewController!
     
     var currentState: SlideOutState = .LeftMenuCollapsed {
         didSet {
             
         }
     }
-
+    
+    var accountSideMenuViewController: AccountSideMenuViewController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        homeViewController = UIStoryboard.homeViewController();
+        
+        homeNavigationController = UINavigationController(rootViewController: homeViewController)
+        view.addSubview(homeNavigationController.view)
+        addChildViewController(homeNavigationController)
+        
+        homeViewController.didMove(toParentViewController: self);
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+}
+
+private extension UIStoryboard {
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    class func mainStoryboard() -> UIStoryboard {
+        return UIStoryboard(name:"Main", bundle: Bundle.main)
     }
-    */
-
+    
+    class func accountSideMenuViewController() -> AccountSideMenuViewController? {
+        return mainStoryboard().instantiateViewController(withIdentifier:"AccountSideMenuViewController") as? AccountSideMenuViewController
+    }
+    
+    class func homeViewController() -> HomeViewController? {
+        return mainStoryboard().instantiateViewController(withIdentifier:"HomeViewController") as? HomeViewController
+    }
 }

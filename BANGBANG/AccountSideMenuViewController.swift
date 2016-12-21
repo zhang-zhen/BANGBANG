@@ -8,6 +8,12 @@
 
 import UIKit
 
+@objc
+
+protocol AccountSideMenuViewControllerDelegate {
+    
+}
+
 class AccountSideMenuViewController: UIViewController {
 
     override func viewDidLoad() {
