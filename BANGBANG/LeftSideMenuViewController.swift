@@ -1,20 +1,14 @@
 //
-//  AccountSideMenuViewController.swift
+//  LeftSideMenuViewController.swift
 //  BANGBANG
 //
-//  Created by Zhen Zhang on 2016-11-20.
+//  Created by Zhen Zhang on 2016-12-26.
 //  Copyright © 2016 Zhang Zhen. All rights reserved.
 //
 
 import UIKit
 
-@objc
-
-protocol AccountSideMenuViewControllerDelegate {
-    
-}
-
-class AccountSideMenuViewController: UIViewController {
+class LeftSideMenuViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Account Side Menu View Controller-->
+        <!--Left Side Menu View Controller-->
         <scene sceneID="F1e-zl-GmX">
             <objects>
-                <viewController storyboardIdentifier="AccountSideMenuViewController" id="vZt-ro-h4F" customClass="AccountSideMenuViewController" customModule="BANGBANG" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LeftSideMenuViewController" id="vZt-ro-h4F" customClass="LeftSideMenuViewController" customModule="BANGBANG" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1E1-gD-GXe"/>
                         <viewControllerLayoutGuide type="bottom" id="SFR-iY-m61"/>
@@ -41,7 +41,11 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="帮别人" id="ZDZ-mL-4er">
-                        <barButtonItem key="leftBarButtonItem" image="icon_me" id="1cS-HV-Tx5" userLabel="Account"/>
+                        <barButtonItem key="leftBarButtonItem" image="icon_me" id="1cS-HV-Tx5" userLabel="Account">
+                            <connections>
+                                <action selector="leftSideMenuTappedWith_sender:" destination="BYZ-38-t0r" id="esg-yf-qYc"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>

@@ -19,9 +19,11 @@ protocol HomeViewControllerDelegate {
 
 class HomeViewController: UIViewController {
     
-    var delegate: HomeViewController?
+    var delegate: HomeViewControllerDelegate?
     
-    @IBAction func accountTapped(_sender: AnyObject){
+    @IBAction func leftSideMenuTapped(_sender: AnyObject){
+        
+        delegate?.toggleLeftPanel?()
         
     }
 
