@@ -31,5 +31,7 @@ class LeftSideMenuViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    // photo size : 130 x 130
 
 }

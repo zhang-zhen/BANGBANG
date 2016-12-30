@@ -69,7 +69,6 @@ extension ContainerViewController: HomeViewControllerDelegate{
         
         addChildSidePanelController(leftSideMenuViewController!)
         
-        
     }
     
     func addChildSidePanelController(_ leftSideMenuViewController: LeftSideMenuViewController) {
