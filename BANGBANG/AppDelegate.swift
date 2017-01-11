@@ -29,8 +29,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navigationBarAppearance = UINavigationBar.appearance()
         navigationBarAppearance.tintColor = UIColor.white
         navigationBarAppearance.barTintColor = UIColor.init(colorLiteralRed: 255.0/255.0, green: 168.0/255.0, blue: 0.0/255.0, alpha: 1.0)
-        navigationBarAppearance.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white]
-        
+        navigationBarAppearance.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white, NSFontAttributeName:UIFont(name :"RTWS YueRoundedGothic G0v1", size:21)!]
+//        for familyName in UIFont.familyNames {
+//            print(familyName)
+//            for fontName in UIFont.fontNames(forFamilyName: familyName) {
+//                print(fontName)
+//            }
+//        }
         return true
     }
 

@@ -17,6 +17,8 @@
 		C18DAFA41DB4622800C5DC82 /* BANGBANGUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18DAFA31DB4622800C5DC82 /* BANGBANGUITests.swift */; };
 		C1A48EC71DF6778600364279 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A48EC61DF6778600364279 /* ContainerViewController.swift */; };
 		C1A78FDB1DE27ECB0014E305 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A78FDA1DE27ECB0014E305 /* HomeViewController.swift */; };
+		C1C2B1A81E25DEC0000723DE /* Microsoft-yahei.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1C2B1A71E25DEC0000723DE /* Microsoft-yahei.ttf */; };
+		C1C2B1AA1E25DEC8000723DE /* RTWSYueRoudGoG0v1-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C1C2B1A91E25DEC8000723DE /* RTWSYueRoudGoG0v1-Regular.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		C18DAFA51DB4622800C5DC82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1A48EC61DF6778600364279 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		C1A78FDA1DE27ECB0014E305 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C1C2B1A71E25DEC0000723DE /* Microsoft-yahei.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Microsoft-yahei.ttf"; sourceTree = "<group>"; };
+		C1C2B1A91E25DEC8000723DE /* RTWSYueRoudGoG0v1-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RTWSYueRoudGoG0v1-Regular.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				C18DAF7F1DB4622800C5DC82 /* BANGBANG */,
+				C1C2B1A51E25DE73000723DE /* Resources */,
 				C18DAF971DB4622800C5DC82 /* BANGBANGTests */,
 				C18DAFA21DB4622800C5DC82 /* BANGBANGUITests */,
 				C18DAF7E1DB4622800C5DC82 /* Products */,
@@ -105,6 +110,7 @@
 			children = (
 				C18DAF801DB4622800C5DC82 /* AppDelegate.swift */,
 				C1A78FD91DE27EB00014E305 /* ViewControllers */,
+				C1C2B19B1E25C466000723DE /* Views */,
 				C18DAF841DB4622800C5DC82 /* Main.storyboard */,
 				C18DAF8A1DB4622800C5DC82 /* Assets.xcassets */,
 				C18DAF8C1DB4622800C5DC82 /* LaunchScreen.storyboard */,
@@ -140,6 +146,30 @@
 				C1260A081E11F99200E1803E /* LeftSideMenuViewController.swift */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C1C2B19B1E25C466000723DE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		C1C2B1A51E25DE73000723DE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C1C2B1A61E25DEAB000723DE /* Fonts */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C1C2B1A61E25DEAB000723DE /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C1C2B1A71E25DEC0000723DE /* Microsoft-yahei.ttf */,
+				C1C2B1A91E25DEC8000723DE /* RTWSYueRoudGoG0v1-Regular.otf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,7 +284,9 @@
 			files = (
 				C18DAF8E1DB4622800C5DC82 /* LaunchScreen.storyboard in Resources */,
 				C18DAF8B1DB4622800C5DC82 /* Assets.xcassets in Resources */,
+				C1C2B1A81E25DEC0000723DE /* Microsoft-yahei.ttf in Resources */,
 				C18DAF861DB4622800C5DC82 /* Main.storyboard in Resources */,
+				C1C2B1AA1E25DEC8000723DE /* RTWSYueRoudGoG0v1-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

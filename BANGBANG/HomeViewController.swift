@@ -31,6 +31,10 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+//        self.navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name :"RTWSYueRoudGoG0v1", size:21)!];
+        //self.navigationController?.navigationBar.tintColor = UIColor
+        
     }
 
     override func didReceiveMemoryWarning() {
