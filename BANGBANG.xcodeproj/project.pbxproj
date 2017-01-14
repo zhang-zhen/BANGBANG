@@ -284,7 +284,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Zhang Zhen";
 				TargetAttributes = {
 					C18DAF7C1DB4622800C5DC82 = {
@@ -654,6 +654,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D3B2BE0F889262CA3AAB85C1 /* Pods-BANGBANG.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W3A2XTWM62;
 				INFOPLIST_FILE = BANGBANG/Info.plist;
@@ -668,6 +669,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 10E36C38E1451CDC3D9B9C2F /* Pods-BANGBANG.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W3A2XTWM62;
 				INFOPLIST_FILE = BANGBANG/Info.plist;
