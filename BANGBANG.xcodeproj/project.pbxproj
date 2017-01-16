@@ -10,6 +10,8 @@
 		3D651BE971F59612CD6785DB /* Pods_BANGBANGUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E33C76F4AA812365DD1299C8 /* Pods_BANGBANGUITests.framework */; };
 		89C49C2AA4CA8854EFB4BC19 /* Pods_BANGBANG.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCA7CCDED8312763F7B98AA /* Pods_BANGBANG.framework */; };
 		9B8A206FAE05FB04EAA5CD50 /* Pods_BANGBANGTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E4DCE7A9C827AA46685BC6 /* Pods_BANGBANGTests.framework */; };
+		C1048B291E2AB4C000D3B810 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1048B281E2AB4C000D3B810 /* User.swift */; };
+		C1048B2B1E2B2FCE00D3B810 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1048B2A1E2B2FCE00D3B810 /* LoginViewController.swift */; };
 		C1260A091E11F99200E1803E /* LeftSideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1260A081E11F99200E1803E /* LeftSideMenuViewController.swift */; };
 		C18DAF811DB4622800C5DC82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18DAF801DB4622800C5DC82 /* AppDelegate.swift */; };
 		C18DAF861DB4622800C5DC82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C18DAF841DB4622800C5DC82 /* Main.storyboard */; };
@@ -48,6 +50,8 @@
 		92E93BCAE179291CE0531653 /* Pods-BANGBANGUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BANGBANGUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BANGBANGUITests/Pods-BANGBANGUITests.release.xcconfig"; sourceTree = "<group>"; };
 		93E4DCE7A9C827AA46685BC6 /* Pods_BANGBANGTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BANGBANGTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A184B73AB03E02967C427642 /* Pods-BANGBANGUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BANGBANGUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BANGBANGUITests/Pods-BANGBANGUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C1048B281E2AB4C000D3B810 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C1048B2A1E2B2FCE00D3B810 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C1260A081E11F99200E1803E /* LeftSideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftSideMenuViewController.swift; sourceTree = "<group>"; };
 		C18DAF7D1DB4622800C5DC82 /* BANGBANG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BANGBANG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C18DAF801DB4622800C5DC82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +126,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C1048B271E2A98AE00D3B810 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C1048B281E2AB4C000D3B810 /* User.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		C18DAF741DB4622800C5DC82 = {
 			isa = PBXGroup;
 			children = (
@@ -149,7 +161,8 @@
 			isa = PBXGroup;
 			children = (
 				C18DAF801DB4622800C5DC82 /* AppDelegate.swift */,
-				C1A78FD91DE27EB00014E305 /* ViewControllers */,
+				C1048B271E2A98AE00D3B810 /* Models */,
+				C1A78FD91DE27EB00014E305 /* Controllers */,
 				C1C2B19B1E25C466000723DE /* Views */,
 				C18DAF841DB4622800C5DC82 /* Main.storyboard */,
 				C18DAF8A1DB4622800C5DC82 /* Assets.xcassets */,
@@ -178,14 +191,15 @@
 			path = BANGBANGUITests;
 			sourceTree = "<group>";
 		};
-		C1A78FD91DE27EB00014E305 /* ViewControllers */ = {
+		C1A78FD91DE27EB00014E305 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				C1A78FDA1DE27ECB0014E305 /* HomeViewController.swift */,
 				C1A48EC61DF6778600364279 /* ContainerViewController.swift */,
 				C1260A081E11F99200E1803E /* LeftSideMenuViewController.swift */,
+				C1048B2A1E2B2FCE00D3B810 /* LoginViewController.swift */,
 			);
-			name = ViewControllers;
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		C1C2B19B1E25C466000723DE /* Views */ = {
@@ -498,8 +512,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1048B2B1E2B2FCE00D3B810 /* LoginViewController.swift in Sources */,
 				C1260A091E11F99200E1803E /* LeftSideMenuViewController.swift in Sources */,
 				C18DAF811DB4622800C5DC82 /* AppDelegate.swift in Sources */,
+				C1048B291E2AB4C000D3B810 /* User.swift in Sources */,
 				C1A48EC71DF6778600364279 /* ContainerViewController.swift in Sources */,
 				C18DAF891DB4622800C5DC82 /* BANGBANG.xcdatamodeld in Sources */,
 				C1A78FDB1DE27ECB0014E305 /* HomeViewController.swift in Sources */,
